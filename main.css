@@ -1,0 +1,128 @@
+body{
+	background-color: rgb(78, 76, 219);
+}
+.grid-container {
+	display: grid;
+	grid-gap: 10px;
+	
+}
+
+.grid-container > div{
+	border: 1px solid black;
+    background-color: white;
+	
+}
+
+#header{
+	text-align: center;
+	grid-column: 1 / span 2;
+	
+	
+}
+
+#main1{
+	grid-column: 3 / span 1;
+	
+}
+
+#main2{
+	grid-column:  1/ span 3;
+}
+
+#right{
+	text-align: center;
+	grid-column: 1 / span 3;
+}
+#header .header{
+	border-radius: 50%;
+	width: 40%;
+}
+#header .name{
+	font-size: 50px;
+}
+#main1 .h{
+	font-weight: 900;
+	font-size: 20px;
+}
+#main2 .flex{
+	display: flex;
+}
+#main2 .picm2{
+	width: 30%;
+}
+#right .cedit11{
+	font-size: 30px;
+	font-weight: 900;
+}
+#main2 .headm2{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 900;
+}
+#main1 .headm1{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 900;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		display: grid;
+		grid-gap: 10px;
+
+		  
+	}
+	#header{
+		text-align: center;
+		grid-column: 1 / span 3;
+	}
+	
+	#main1{
+		grid-column: 1 / span 2;
+	}
+	
+	#main2{
+		grid-column: 3 / span 1;
+	}
+	
+	#right{
+		text-align: center;
+		grid-column: 1 / span 3;
+	}
+
+}
+
+@media only screen and (max-width: 500px) {
+	.grid-container {
+		
+		display: grid;
+		grid-gap: 10px;  
+		  
+	}
+	#header{
+		padding: auto;
+		text-align: center;
+		grid-column: 1 / span 3;
+	}
+	
+	#main1{
+		grid-column: 1 / span 3;
+	}
+	
+	#main2{
+		
+		grid-column: 1 / span 3;
+	}
+	
+	#right{
+		text-align: center;
+
+		grid-column: 1 / span 3;
+	}
+	#header .name{
+		font-size: 30px;
+	}
+	
+}
