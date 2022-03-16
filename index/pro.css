@@ -1,0 +1,76 @@
+body{
+	background-color: rgb(78, 76, 219);
+}
+.grid-container {
+	display: grid;
+	grid-gap: 10px;
+	
+}
+
+.grid-container > div{
+	border: 1px solid black;
+    background-color: white;
+	
+}
+
+#Head{
+	text-align: center;
+	grid-column: 1 / span 3;
+	
+}
+
+#main1{
+    text-align: center;
+	grid-column: 1 / span 3;
+}
+
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		display: grid;
+		grid-gap: 10px;  
+	}
+	#Head{
+		text-align: center;
+		grid-column: 1 / span 3;
+	}
+    #main1{
+        text-align: center;
+		grid-column: 1 / span 3;
+	}
+	
+	
+
+}
+
+@media only screen and (max-width: 500px) {
+	.grid-container {
+		
+		display: grid;
+		grid-gap: 10px;  
+		  
+	}
+	#Head{
+        text-align: center;
+		grid-column: 1 / span 3;
+	}
+	
+	#main1{
+        text-align: center;
+		grid-column: 1 / span 3;
+	}
+	
+}
+#Head .a1{
+    width: 20%;
+}
+#main1 .a2{
+    width: 50%;
+}
+#Head .head1a2{
+	font-size: 50px;
+	font-weight: 900;
+}
+#main1 .head1a3{
+	font-size: 30px;
+	font-weight: 900;
+}
